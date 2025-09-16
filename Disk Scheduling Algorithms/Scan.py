@@ -1,4 +1,4 @@
-def scan_scheduling_simple(requests, head, direction):
+def scan_scheduling(requests, head, direction):
     seek_count = 0
 
     
@@ -42,7 +42,7 @@ requests = list(map(int, input("Enter requests separated by space: ").split()))
 head = int(input("Enter current head position: "))
 direction = input("Enter direction (left/right): ").lower()
 
-total_seek = scan_scheduling_simple(requests, head, direction)
+total_seek = scan_scheduling(requests, head, direction)
 if total_seek is not None:
     print(f"Total seek time: {total_seek}")
 
